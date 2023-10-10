@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                background-color: #363636;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Add React to website</h1>
+        <!-- todo : Github : luu tru ma nguon -->
+        <!-- todo : NPMJS : luu tru san pham duoc xay dung tu ma nguon  -->
+        <!-- todo : UNPKG : luu tru ma nguon -->
+        <!-- 
+            
+            1. Github, NPMJS, UNPKG
+            2. Add React to website
+            3. Official docs
+
+         -->
+
+        <!-- ! Link : https://unpkg.com/react@17.0.2/index.js
+            'use strict';
+            if (process.env.NODE_ENV === 'production') {
+                *todo : Phien ban dung cho deploy ng dung
+                module.exports = require('./cjs/react.production.min.js');
+            } else {
+                *todo : Phien ban dung cho dev phat trien
+                module.exports = require('./cjs/react.development.js');
+            }
+          -->
+    </body>
+    <script
+        src="https://unpkg.com/react@17/umd/react.development.js"
+        crossorigin
+    ></script>
+    <script>
+        console.log(React);
+        console.log(React.version);
+    </script>
+</html>
