@@ -4,12 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <style>
-            body {
-                background-color: #363636;
-                color: #fff;
-            }
-        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
         <h1>Add React to website</h1>
@@ -34,6 +35,7 @@
                 module.exports = require('./cjs/react.development.js');
             }
           -->
+        <div id="root"></div>
     </body>
     <script>
         const courses = [
@@ -253,7 +255,12 @@
         src="https://unpkg.com/react@17/umd/react.development.js"
         crossorigin
     ></script>
-    <script type="text/babel" src="./domEvent.js">
+    <script
+        src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+        crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel" src="./props.js">
         // console.log(React);
         // console.log(React.version);
     </script>
