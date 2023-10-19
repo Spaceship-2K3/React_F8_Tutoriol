@@ -4,3 +4,9 @@ body {
     color: #fff;
     font-family: "Roboto", sans-serif;
 }
+
+a {
+    font-size: 32px;
+    color: rgba(0, 119, 255, 0.831);
+    font-weight: 700;
+}

@@ -5,7 +5,7 @@ function PostItem({ image, title, desc, publishedAt, callback = () => {} }) {
             <img src={image} alt="" className="post-img" />
             <h2 className="post-title">{title}</h2>
             <p className="post-desc">{desc}</p>
-            <p className="post-published">{publishedAt}</p>
+            <p className="post-published"> {publishedAt}</p>
         </div>
     );
 }
@@ -33,11 +33,13 @@ ReactDOM.render(postList, document.querySelector("#root"));
 const CourseItem = function ({ title, icon, image, desc, member }) {
     return (
         <li className="course-item">
-            <h2 className="course-title">{title}</h2>
-            <img src={icon} alt="" className="course-icon" />
+            <h2 className="course-title">
+                {title}
+                <img src={icon} alt="" className="course-icon" />
+            </h2>
             <img src={image} alt="" className="course-img" />
             <p className="course-desc">{desc}</p>
-            <p className="course-member">{member}</p>
+            <p className="course-member">{"Số thành viên : " + member}</p>
         </li>
     );
 };

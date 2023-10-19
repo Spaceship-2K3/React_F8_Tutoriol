@@ -28,8 +28,9 @@ function Button({ title, href, onClick }) {
     if (onClick) {
         props.onClick = onClick;
     }
+    console.log(props);
 
-    return <Component {...props}>{title}</Component>;
+    return <Component {...props} /** giải obj  */>{title}</Component>;
 }
 
 function App({ title, content }) {
@@ -42,16 +43,16 @@ function App({ title, content }) {
             /* <Component /> */}
 
             {/* <Button
-                    title="Click me!"
-                    href="https://github.com/Spaceship-2K3"
-                    onClick={() => console.log(Math.random())}
-                /> */}
+                title="Click me!"
+                href="https://github.com/Spaceship-2K3"
+                onClick={() => console.log(Math.random())}
+            /> */}
 
-            {null}
+            {/* {null}
             {undefined}
-            {false}
+            {false} */}
             {/* {firstAccess && <h1>Welcome to F8</h1>} */}
-            {<h1>{title || content || "Chao mung tro lai "}</h1>}
+            <h1>{title || content || "Chao mung tro lai "}</h1>
         </div>
     );
 }

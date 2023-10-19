@@ -34,7 +34,7 @@ const CourseItem = function ({ course, onHandleClick }) {
 
 // ! Container
 function CoursesList() {
-    // useCallback
+    // todo : useCallback
     const handleClick = (course) => {
         console.log(course.title);
     };
